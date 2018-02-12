@@ -1,0 +1,9 @@
+.p3d {
+	text-align: center
+}
+
+.p3d canvas {
+	width: 640px;
+	height: 480px;
+	background-color: rgb(24, 68, 109);
+}
