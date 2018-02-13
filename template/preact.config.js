@@ -22,7 +22,7 @@ export default function(config, env, helpers) {
 	}
 
 	if (env.production) {
-		config.resolve.alias.three = path.join(
+		config.resolve.alias.three = path.resolve(
 			__dirname,
 			'node_modules/three/build/three.min.js'
 		);
@@ -52,5 +52,13 @@ export default function(config, env, helpers) {
 		plugin.options.exclude = /vendor\.js/;
 		// fully remove uglify
 		//config.plugins.splice(plugins[0].index, 1);
+	}
+
+	// setup html template
+	const templatePath = path.resolve(__dirname, 'template.html');
+	plugins = helpers.getPluginsByName(config, 'HtmlWebpackPlugin');
+	for (let i = 0; i < plugins.length; ++i) {
+		let plugin = plugins[i].plugin;
+		plugin.options.template = `!!ejs-loader!${templatePath}`;
 	}
 }
