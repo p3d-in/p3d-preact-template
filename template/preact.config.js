@@ -51,6 +51,6 @@ export default function(config, env, helpers) {
 		let plugin = plugins[0].plugin;
 		plugin.options.exclude = /vendor\.js/;
 		// fully remove uglify
-		config.plugins.splice(plugins[0].index, 1);
+		//config.plugins.splice(plugins[0].index, 1);
 	}
 }
