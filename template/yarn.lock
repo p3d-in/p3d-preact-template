@@ -5063,6 +5063,12 @@ p-try@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-1.0.0.tgz#cbc79cdbaf8fd4228e13f621f2b1a237c1b207b3"
 
+"p3d-preact-plugin@git+ssh://git@bitbucket.org:gsxd/p3d-preact-plugin.git":
+  version "0.1.0"
+  resolved "git+ssh://git@bitbucket.org:gsxd/p3d-preact-plugin.git#f69d34279874ff29bece2833ad91489763d3a4f7"
+  dependencies:
+    preact-cli-plugin-fast-async "^1.0.1"
+
 "p3d-three@git+ssh://git@bitbucket.org:gsxd/p3d-three-dist.git":
   version "0.0.1"
   resolved "git+ssh://git@bitbucket.org:gsxd/p3d-three-dist.git#c845fdec30ea348b2eed1132e93eb998f3abf2f5"
