@@ -8,7 +8,11 @@ export default class App extends Component {
 		return (
 			<div>
 				<h1>Hello, World!</h1>
-				<P3d />
+				<div class="container">
+					<div class="p3d">
+						<P3d />
+					</div>
+				</div>
 			</div>
 		);
 	}
